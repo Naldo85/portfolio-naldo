@@ -14,6 +14,10 @@
     --font-action: "Mulish", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
     /*background-color: red;*/
     width: 2rem;
@@ -30,18 +34,19 @@
 
 .show-menu .hamburguer{
     right: 16rem;
+    
 }
 
 .line{
     width: 100%;
     height: .1rem;
     background-color: #ffffff;
-    box-shadow: 0.1rem 0.1rem 1px #000;
     transition: transform .5s;
 }
 
 .show-menu #line1{
     transform: rotate(45deg) translate(.2rem, .5rem);
+    background-color: #3d1517;
 }
 
 .show-menu #line2{
@@ -50,7 +55,8 @@
 }
 
 .show-menu #line3{
-    transform: rotate(-45deg) translate(.1rem, -.5rem);
+    transform: rotate(-45deg) translate(.2rem, -.6rem);
+    background-color: #3d1517;
 }
 
 .hamburguer span{
@@ -75,11 +81,11 @@
     border-left: .5rem solid transparent;
     border-bottom: .5rem solid transparent;
     left: -1rem;
+
 }
 
 .show-menu .hamburguer:hover span{
     opacity: 1;
-    
 }
 
 header{
@@ -174,7 +180,7 @@ header{
 .sidebar{
     width: 20rem;
     height: 100vh;
-    background-color: #fff;
+    background-color: rgb(241, 240, 240);
     position: fixed;
     top: 0;
     right: -20rem;
@@ -190,6 +196,8 @@ header{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: .1rem .1rem  rgba(0, 0, 0,0.1);
+
 }
 
 .menu-item{
@@ -200,8 +208,8 @@ header{
 .menu-link{
     font-family: var(--font-action);
     font-size: 2rem;
-    color: #555;
-    transition: color 1s;
+    color: rgb(59, 59, 59);
+    transition: color .5s;
 }
 
 .menu-link:hover{
@@ -571,4 +579,62 @@ header{
     margin-top: 4rem;
     font-family: var(--font-action);
     font-size: 1rem;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+    transition: transform 1s;
+}
+
+.social-list a:hover{
+    color: #a40cc2;
+    transition: .7s;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    background: #DA22FF; 
+    background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  
+    background: linear-gradient(to right, #9733EE, #DA22FF);
+    display: flex;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #00000009;
+}
+
+#link-topo:hover{
+    color: #c5c3c3;
 }
