@@ -586,11 +586,11 @@ header{
 
 .btn-orcamento{
     text-transform: uppercase;
-    padding: .8rem;
+    padding: .5rem;
     grid-column: 2;
     margin-top: 4rem;
     font-family: var(--font-action);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 footer{
